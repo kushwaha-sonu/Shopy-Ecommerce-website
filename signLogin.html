@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/b5202a0756.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+
+</head>
+
+<body class="body-image">
+
+    <section class="nav-section container-fluid p-0">
+        <nav class="navbar container-fluid">
+            <div class="logo">
+                <h1>Shopy</h1>
+            </div>
+            <div class="search-bar container-fluid">
+                <div class="search">
+                    <input class="search-box" type="search" placeholder="Search product" />
+                    <div class="search-icon">
+                        <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-content container-fluid">
+                <ul id="nav">
+                    <li><a class="active" href="#section-1">Home</a></li>
+                    <li><a href="#section-3">Shop</a></li>
+                    <li><a href="#section-4">Blogs</a></li>
+                    <li><a href="#section-6">Offers</a></li>
+                    <li><a href="#section-8">Contact</a></li>
+                    <li><a href="#logInContainer">Account</a></li>
+                    <li>
+                        <a id="shoping-cart" href="#"><i class="fa-sharp fa-solid fa-cart-shopping"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="menu-bar" id="menu-bar">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+
+        </nav>
+
+    </section>
+
+    <div class="container-fluid pt-lg-5 pb-lg-5 mb-5">
+
+        <div class="container d-flex justify-content-center align-content-center w-auto mt-5 " id="logInContainer">
+
+            <div class="card w-auto p-5 border-1 border-primary color1">
+
+                <div class="card-header text-center color1 border-bottom-0 fw-bold fs-2 ">
+                    Log in
+                </div>
+
+                <!-- <form action="" class="needs-validation form-label"> -->
+                <div class="card-body align-items-center ">
+
+                    <div class="row card-body">
+                        <label for="inputEmail3" class="fs-5 form-label">Email</label>
+                        <div class="col-sm-10 mt-2 w-100">
+                            <input type="email" class="form-control border-1 border-primary" id="inputEmail3" required>
+                        </div>
+                    </div>
+                    <div class="row card-body">
+                        <label for="inputPassword3" class="fs-5 form-label">Password</label>
+                        <div class="col-sm-10 mt-2 w-100">
+                            <input type="password" class="form-control border-1 border-primary " id="inputPassword3"
+                                required>
+                        </div>
+                    </div>
+
+                    <!-- </form> -->
+
+                    <div class="row card-body">
+                        <a href="index.html"><button class=" btn btn-primary fs-5 w-100" id="loginsubmit">Submit</button></a>
+                    </div>
+
+
+                    <div class="row card-body">
+                        <p class=" text-center fs-6">Don't have a account?<button class="border-0 color1 text-primary"
+                                id="signUp">Sign Up</button></p>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="container d-none justify-content-center align-content-center w-auto h-auto" id="signUpContainer">
+
+
+            <div class="card w-auto p-5 border-1 border-primary color1">
+
+                <div class="card-header text-center border-bottom-0 fw-bold fs-2 color1">
+                    Sign Up
+                </div>
+                <form action="" class="needs-validation form-label">
+                    <div class="row card-body">
+                        <label for="inputEmail3" class="fs-5 form-label">First Name</label>
+                        <div class="col-sm-10 mt-2 w-100">
+                            <input type="text" class="form-control border-1 border-primary" id="inputEmail3" required>
+                        </div>
+                    </div>
+                    <div class="row card-body">
+                        <label for="inputPassword3" class="fs-5 form-label">Last Name</label>
+                        <div class="col-sm-10 mt-2 w-100">
+                            <input type="text" class="form-control border-1 border-primary " id="inputPassword3"
+                                required>
+                        </div>
+                    </div>
+                    <div class="row card-body">
+                        <label for="inputPassword3" class="fs-5 form-label">Email</label>
+                        <div class="col-sm-10 mt-2 w-100">
+                            <input type="email" class="form-control border-1 border-primary " id="inputPassword3"
+                                required>
+                        </div>
+                    </div>
+                    <div class="row card-body">
+                        <label for="inputPassword3" class="fs-5 form-label">Password</label>
+                        <div class="col-sm-10 mt-2 w-100">
+                            <input type="password" class="form-control border-1 border-primary " id="inputPassword3"
+                                required>
+                        </div>
+                    </div>
+                    <div class="row card-body">
+                        <label for="inputPassword3" class="fs-5 form-label">Confirm Password</label>
+                        <div class="col-sm-10 mt-2 w-100">
+                            <input type="password" class="form-control border-1 border-primary " id="inputPassword3"
+                                required>
+                        </div>
+                    </div>
+                    <div class="row card-body">
+                        <button class=" btn btn-primary fs-5 " type="submit" id="signsubmit">Submit</button>
+                    </div>
+
+                </form>
+
+
+                <div class="row card-body">
+                    <p class=" text-center fs-6">Already have a account?<button class="border-0 text-primary color1 "
+                            id="logIn">Log In</button></p>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <div class="custom-alert" id="custom-alert">
+        <div class="custom-alert-content">
+            <span id="custom-alert-message">This is a custom alert!</span>
+            <button onclick="closeCustomAlert()">OK</button>
+        </div>
+    </div>
+
+    <section class="section-8 section-p color2" id="section-8">
+        <div class="footer-container">
+            <div class="col-1 flex">
+                <h4>Contact</h4>
+                <p>
+                    <strong>Address:</strong>Jalandhar - Delhi, Grand Trunk Rd,<br>
+                    Phagwara,Punjab 144001
+                </p>
+                <p><strong>Phone: </strong>+010134567564 /+910134567564/</p>
+                <div class="follow">
+                    <h4>Follow us</h4>
+                    <div class="icon">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-youtube"></i>
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-2 flex">
+                <h4>About</h4>
+                <a href="#">About Us</a>
+                <a href="#">Delivery Information</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Contact us</a>
+            </div>
+
+            <div class="col-3 flex">
+                <h4>About</h4>
+                <a href="#">Account</a>
+                <a href="#">Sign In</a>
+                <a href="#">View Cart</a>
+                <a href="#">My Wishlist</a>
+                <a href="#">Track My Order</a>
+                <a href="#">Help</a>
+
+            </div>
+
+            <div class="col-4 flex">
+                <h4>Install App</h4>
+                <p>From App store or Google Play</p>
+                <div class="install">
+                    <img src="./images/pay/app.jpg" alt="">
+                    <img src="./images/pay/play.jpg" alt="">
+                </div>
+                <p>Secured Payment Gateways</p>
+                <img src="./images/pay/pay.png" alt="">
+
+
+            </div>
+
+
+        </div>
+        <div class="copyright ">
+            <p>©copyright</p>
+        </div>
+    </section>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <script src="signLogin.js"></script>
+</body>
+
+</html>
