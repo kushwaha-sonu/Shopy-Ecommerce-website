@@ -19,18 +19,21 @@ login.addEventListener("click", () => {
 });
 
 document.getElementById('signsubmit').addEventListener('click',()=>{
-  alert("Account created successfully");
+  Swal.fire({
+    title: "Account Created Successfully",
+    // text: "That thing is still around?",
+    icon: "success"
+  });
+  
 })
 
 document.getElementById('loginsubmit').addEventListener('click',()=>{
-  alert("login successfully");
+  Swal.fire({
+    title: "Login Successfully",
+    // text: "That thing is still around?",
+    icon: "success"
+  });
 })
-
-
-
-
-
-
 
 // Example starter JavaScript for disabling form submissions if there are invalid fields
 (function () {
@@ -51,6 +54,6 @@ document.getElementById('loginsubmit').addEventListener('click',()=>{
         form.classList.add('was-validated')
       }, false)
     })
-})()
+})();
 
 
